@@ -1,7 +1,6 @@
 'use client'
 
 import { IframePanel } from "./components/IframePanel";
-import { Navbar } from "./components/Navbar";
 import ContentPanel from "./components/ContentPanel";
 import { useSearchParams } from "next/navigation";
 import { parseQueryToBody } from "@/lib/utils";
@@ -17,7 +16,7 @@ function HomeContent() {
 
     return (
         <div className="min-h-screen">
-           {/*  <Navbar title={value.title} /> */}
+            {/*  <Navbar title={value.title} /> */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="lg:flex gap-4">
                     <IframePanel
@@ -33,7 +32,7 @@ function HomeContent() {
 export default function PageHome() {
     return (
         <Suspense fallback={<div>Cargando...</div>}>
-            <HomeContent/>
+            <HomeContent />
         </Suspense>
     )
 }
