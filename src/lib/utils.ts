@@ -1,5 +1,6 @@
 import { QueryResult } from "@/types/type";
 
+//CAMPAÑAS
 export const Campaigns: QueryResult = {
     code: '4dcb27e3-cb9b-48d1-b63c-1f3dc3a3c817',//codigo del tango q suministra(ornella en este caso)
     title: 'Sistema de Campañas',//titulo para cada app en el navbar
