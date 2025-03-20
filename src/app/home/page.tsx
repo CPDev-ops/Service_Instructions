@@ -13,7 +13,6 @@ function HomeContent() {
     console.log(queryValue)
     const value = parseQueryToBody(queryValue)
     console.log(value)
-    console.log('FIXED')
 
     return (
         <div className="min-h-screen">

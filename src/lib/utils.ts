@@ -6,8 +6,6 @@ export const Campaigns: QueryResult = {
     title: 'Sistema de Campañas',//titulo para cada app en el navbar
     titleCode: 'Campañas',//titulo x por si no printea el html del public
     source: './html/Campaign.html'//lugar en la carpeta public,
-    
-
 }
 
 //GUARDARROPAS
@@ -18,13 +16,23 @@ export const GoatCheck: QueryResult = {
     source: './html/GoatCheck.html'//lugar en la carpeta public
 }
 
+//OTRAS APP CON ESA ETRUCTURA
+export const test: QueryResult = {
+    code: '',
+    source: '',
+    title: '',
+    titleCode: ''
+}
+
 //functions
 const QUERY_VALUES_MAP: Record<string, QueryResult> = {
     campanas: Campaigns,
     guardarropas: GoatCheck
 };
 
+//parseamos la data
 export function parseQueryToBody(queryValue: string | null): QueryResult {
+
     if (!queryValue || !QUERY_VALUES_MAP[queryValue]) {
         // Retorna un valor por defecto si el parámetro no coincide
         return {
@@ -37,4 +45,5 @@ export function parseQueryToBody(queryValue: string | null): QueryResult {
 
     // Retorna el objeto correspondiente del mapeo
     return QUERY_VALUES_MAP[queryValue];
+
 }
