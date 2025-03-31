@@ -12,17 +12,17 @@ function HomeContent() {
     const queryValue = searchParams.get('nameApp'); // Obtén el valor de 'queryValue'
     console.log(queryValue)
     const value = parseQueryToBody(queryValue)
-    console.log(value)
-
     return (
         <div className="min-h-screen">
             {/*  <Navbar title={value.title} /> */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="lg:flex gap-4">
-                    <IframePanel
-                        code={value.code}
-                    />
-                    <ContentPanel source={value.source} title={value.titleCode} />
+                    {value.code && (
+                        <IframePanel
+                            code={value.code}
+                        />
+                    )}
+                    <ContentPanel code={value.code} source={value.source} title={value.titleCode} />
                 </div>
             </main>
         </div>

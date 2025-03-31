@@ -1,5 +1,6 @@
 export interface HookInstructiveProps {
     source: string
+    code?: string;
     title: string
 }
 export function HookInstructive({ source, title }: HookInstructiveProps) {

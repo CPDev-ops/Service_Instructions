@@ -16,6 +16,14 @@ export const GoatCheck: QueryResult = {
     source: './html/GoatCheck.html'//lugar en la carpeta public
 }
 
+//AFFILIATE
+export const Affiliate: QueryResult = {
+    code: '',
+    title: 'Sistema de Affiliate',
+    titleCode: 'Affiliate',
+    source: "./html/Affiliate.html"
+}
+
 //OTRAS APP CON ESA ETRUCTURA
 export const test: QueryResult = {
     code: '',
@@ -27,7 +35,8 @@ export const test: QueryResult = {
 //functions
 const QUERY_VALUES_MAP: Record<string, QueryResult> = {
     campanas: Campaigns,
-    guardarropas: GoatCheck
+    guardarropas: GoatCheck,
+    affiliate: Affiliate
 };
 
 //parseamos la data
