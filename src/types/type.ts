@@ -4,5 +4,6 @@ export type QueryResult = {
     code: string;
     titleCode: string;
     source: string
+    canva?:boolean;
 };
 

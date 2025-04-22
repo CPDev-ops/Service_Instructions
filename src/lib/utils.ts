@@ -21,7 +21,8 @@ export const Affiliate: QueryResult = {
     code: '',
     title: 'Sistema de Affiliate',
     titleCode: 'Affiliate',
-    source: "./html/Affiliate.html"
+    source: "./html/Affiliate.html",
+    canva: true
 }
 
 //OTRAS APP CON ESA ETRUCTURA
